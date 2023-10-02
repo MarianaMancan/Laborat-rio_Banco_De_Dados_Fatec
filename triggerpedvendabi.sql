@@ -28,7 +28,7 @@ DECLARE
 BEGIN
 	select MAX(cppvenda) int mreg from pedvendas;
 	if(mreg is null)
-	the
+	then
 		NEW.cppvenda := 5;
 	else
 		NEW.cppvenda := mreg +5;
